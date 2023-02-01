@@ -1,0 +1,26 @@
+.header{
+  position: fixed;
+  height: 90 px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1; /* using a z-index so we can use an overlay for the pullout-menue*/
+  transition:  .3s ease-in;
+  overflow: hidden;
+
+}
+
+.header .navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1240px;
+  margin: auto; /* so its in the middle of the page*/
+  height: 100%; 
+  padding: 0 1 rem;
+}
+
+.header .navbar img{
+  width: 200px;
+  height: auto;
+}
