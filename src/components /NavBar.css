@@ -3,13 +3,11 @@
   height: 90px;
   width: 100%;
   top: 0;
-  /* padding-top: 40px; */
   left: 0;
-  z-index: 1; /* using a z-index so we can use an overlay for the pullout-menu*/
-  transition:  .3s ease-in;
+  z-index: 1; 
+  transition: .3s ease-in;
   overflow: hidden;
-
-  /* background-color: var(--secondary-color); */
+  background-color: var(--whiteish);
 }
 
 .header .navbar{
@@ -17,13 +15,16 @@
   justify-content: space-between;
   align-items: center;
   max-width: 1240px;
-  margin: auto; /* so its in the middle of the page*/
+  margin: auto; 
   height: 100%; 
-  padding: 0 1 rem;
+  padding: 0 2rem;
 }
 
+.header .nav-menu a{
+  color: var(--primary-color);
+}
 .header .navbar img{
-  width: 200px;
+  width: 250px;
   height: auto;
 }
 
@@ -33,12 +34,14 @@
 }
 .header .nav-item{
   padding: 1rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .header .nav-item a:hover{
   padding-bottom: 12px;
   border-bottom: 3px solid var(--secondary-color);
+  transition: .3s;
+
 }
 
 .hamburger{
@@ -53,7 +56,7 @@
   }
   
   .header .navbar {
-    max-width: 00%;
+    max-width: 100%;
   }
 
   .hamburger{
@@ -62,8 +65,8 @@
 
   .nav-menu{
     position: fixed;
-    left: 0;
-    top: 5rem;
+    left: -100%;
+    top: 90px;
     flex-direction: column;
     background-color: var(--whiteish);
     width: 100%;
@@ -72,4 +75,29 @@
     text-align: center;
     transition: .3s;
   }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 1.5rem 0;
+  }
+
+  .header .navbar h1{
+    width: 150px;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
