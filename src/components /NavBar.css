@@ -1,13 +1,15 @@
 .header{
   position: fixed;
-  height: 90 px;
+  height: 90px;
   width: 100%;
   top: 0;
+  /* padding-top: 40px; */
   left: 0;
-  z-index: 1; /* using a z-index so we can use an overlay for the pullout-menue*/
+  z-index: 1; /* using a z-index so we can use an overlay for the pullout-menu*/
   transition:  .3s ease-in;
   overflow: hidden;
 
+  /* background-color: var(--secondary-color); */
 }
 
 .header .navbar{
@@ -23,4 +25,51 @@
 .header .navbar img{
   width: 200px;
   height: auto;
+}
+
+
+.header .nav-menu{
+  display: flex;
+}
+.header .nav-item{
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.header .nav-item a:hover{
+  padding-bottom: 12px;
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+.hamburger{
+  display: none;
+}
+
+
+@media screen and (max-width: 940px) {
+  .header{
+    max-width: 100%;
+    background-color: var(--whiteish);
+  }
+  
+  .header .navbar {
+    max-width: 00%;
+  }
+
+  .hamburger{
+    display: block;
+  }
+
+  .nav-menu{
+    position: fixed;
+    left: 0;
+    top: 5rem;
+    flex-direction: column;
+    background-color: var(--whiteish);
+    width: 100%;
+    height: 90vh;
+    z-index: 999;
+    text-align: center;
+    transition: .3s;
+  }
 }
