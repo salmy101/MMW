@@ -3,7 +3,7 @@
   --secondary-color: #8EA7E9;
   --lightblue:#E5E0FF;
   --whiteish: #FFF2F2;
-  --overlay: rgba(126, 118, 118, 0.7);
+  --overlay: rgba(9, 9, 9, 0.7);
 }
 
 *{
@@ -20,7 +20,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 1.2;
 }
 
@@ -41,7 +41,7 @@ a{
 .button{
   padding: 17px;
   font-size:  1.2rem;
-  color: var(--whiteish);
+  color: #fff;
   font-size: 600;
   text-transform: uppercase;
   background-color: var(--secondary-color);
