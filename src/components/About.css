@@ -17,8 +17,9 @@
   font-size: 3rem;
 }
 .about .container img {
-  padding: 0rem;
-  width: 40vw;
+  padding: 6rem;
+  /* width: 40vw; */
+  
 }
 
 .about .col-2 {
@@ -55,6 +56,7 @@
   .about .container img {
       padding: 0rem;
       width: 90vw;
+    
   }
 
   .about .container .col-2 {
