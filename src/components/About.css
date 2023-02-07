@@ -18,7 +18,7 @@
 }
 .about .container img {
   padding: 6rem;
-  /* width: 40vw; */
+  width: 50vw;
   
 }
 
@@ -53,9 +53,14 @@
       width: 100%;
   }
 
+  .about h2 {
+    margin-top: 1rem;
+  }
+
   .about .container img {
-      padding: 0rem;
-      width: 90vw;
+    padding: 0rem;
+    margin-left: 8.5rem;
+      width: 60vw;
     
   }
 
@@ -64,7 +69,7 @@
   }
 
   .about button {
-      margin-bottom: 1rem;
+      margin-bottom: 4rem;
   }
 }
 
