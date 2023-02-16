@@ -4,6 +4,8 @@ import "./Contact.css";
 export default function Contact() {
   return (
     <div className="contact">
+
+
       <div className="contact hero">
         <div className="content">
           <p>Edmonton Alberta</p>
@@ -15,6 +17,7 @@ export default function Contact() {
           </button>
         </div>
       </div>
+
       <div className="container">
         <h2>Contact Us</h2>
         <p>
@@ -34,7 +37,7 @@ export default function Contact() {
               <li className="half">
                 <input
                   placeholder="Subject"
-                  type="subject"
+                  type="text"
                   name="subject"
                   required
                 />
@@ -43,17 +46,17 @@ export default function Contact() {
               <li className="half">
                 <textarea
                   placeholder="Message"
-                  type="message"
                   name="message"
                   required
                 />
               </li>
               <li>
-                <input type="submit" className="flat-button" value="SEND" />
+                <input type="submit" className="button" value="SEND" />
               </li>
             </ul>
           </form>
         </div>
+        
       </div>
     </div>
   );
